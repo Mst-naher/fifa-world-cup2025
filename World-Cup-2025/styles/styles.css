@@ -68,6 +68,28 @@ img {
 }
 
 /* Custome Styles */
+.nav{
+  background-color: rgb(33, 33, 185);
+  padding: 15px 0;
+ 
+}
+.nav ul li a{
+   color: white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+.nav ul li a:hover{
+color: red;
+
+}
+
+.nav ul{
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  justify-content: center;
+}
+
 .banner {
   display: flex;
   align-items: center;
