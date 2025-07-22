@@ -21,6 +21,51 @@ img {
   /* margin: 10px auto; */
   border: none;
 }
+/* Animation */
+@keyframes banner-animation {
+  0% {
+    opacity: 0.1;
+    transform: translatex(-60px);
+    color: blue;
+  }
+  5%{
+    color: red;
+  }
+  50% {
+    opacity: 0.5;
+     transform: translatex(-30px);
+     color: greenyellow;
+  }
+  70%{
+    color: blueviolet;
+  }
+
+  90%{
+    color: blue;
+  }
+
+  100% {
+    opacity: 1;
+     transform: translatex(0px);
+     color: orange;
+  }
+}
+
+@keyframes banner-player-animation {
+  0% {
+    opacity: 0;
+    transform: translatex(-60px);
+  }
+  50% {
+    opacity: 0.7;
+     transform: translatex(-30px);
+  }
+
+  100% {
+    opacity: 1;
+     transform: translatex(0px);
+  }
+}
 
 /* Custome Styles */
 .banner {
@@ -28,8 +73,10 @@ img {
   align-items: center;
   background-color: black;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 50px auto;
+
+  animation: banner-animation 0.7s ease-out forwards;
 }
 .banner h2 {
   font-size: 70px;
@@ -51,6 +98,7 @@ img {
 }
 .banner-right img {
   display: block;
+  animation: banner-player-animation 1s ease-in infinite;
 }
 
 /* Upcoming Matches */
